@@ -7,8 +7,8 @@ WANDB Report Link:
 This project aims to build a transliteration system that converts text from one script to another while preserving its phonetic structure. The system leverages advanced neural network architectures, including Recurrent Neural Networks (RNNs), Gated Recurrent Units (GRUs), and Long Short-Term Memory networks (LSTMs). Using encoder-decoder sequence-to-sequence (Seq2Seq) models, the project explores both the conventional approach and enhanced versions incorporating attention mechanisms to improve accuracy. By comparing these different models, the project seeks to identify the most effective method for transliterating text between various languages from the [Aksharantar dataset](https://drive.google.com/file/d/1tGIO4-IPNtxJ6RQMmykvAfY_B0AaLY5A/view?usp=drive_link) released by [AI4Bharat](https://ai4bharat.org/). Hyperparameter tuning is done using wandb to find the best performing configurations.
 
 ## Files info 
-1. [main.ipynb](link) - The main ipynb file containing the source code along with wandb sweeps for hyperparameter tuning
-2. [train.py](link) - Python file to train and run the code
+1. [main.ipynb](main.ipynb) - The main ipynb file containing the source code along with wandb sweeps for hyperparameter tuning
+2. [train.py](train.py) - Python file to train and run the code
 3. [prediction_vanilla.csv](predictions_vanilla/prediction_vanilla.csv) - Predicted data of the test set without attention
 4. [attention_predictions.csv](predictions_attention/attention_predictions.csv) - Predictions of the test set with Attention
 
@@ -17,7 +17,7 @@ You can run and train the model by two ways. <br>
 - Using main.ipynb file.
 - Using train.py
 
-**Download the *[main.ipynb](link)* file and run it on Google Colab or Kaggle using the provided *[Aksharantar dataset](aksharantar_sampled)*.** <br>
+**Download the *[main.ipynb](main.ipynb)* file and run it on Google Colab or Kaggle using the provided *[Aksharantar dataset](aksharantar_sampled)*.** <br>
 Note that the source file paths in the ipynb file is corresponding to Kaggle as the code has been trained and run in Kaggle environment. 
 
 Alternatively, <br>
@@ -44,9 +44,8 @@ python train.py
 - pandas
 
 ## Project Roadmap
-Q1. <br>
-Q2. <br>
-Sweep configuration:
+
+### Sweep configuration:
 ```
 # sweep config file
 sweep_config = {
@@ -86,4 +85,5 @@ sweep_config = {
 ```
 **Note: To run the wandb sweeps you have to provide your unique wandb API key.**
 
-## Code References
+### Attention heatmap:
+Plotted using Matplotlib. Used AnjaliOldLipi-Regular for plotting. Plot uploaded to report using wandb. 
