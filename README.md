@@ -1,7 +1,7 @@
 # MA23M002 - ABHINAV T K
 # Transliteration System using RNN, GRU & LSTM with Encoder-Decoder Seq2Seq Models (with and without Attention)
 
-WANDB Report Link: 
+WANDB Report Link: https://api.wandb.ai/links/abhinavtk/g63f5a80
 
 ## Project Description:
 This project aims to build a transliteration system that converts text from one script to another while preserving its phonetic structure. The system leverages advanced neural network architectures, including Recurrent Neural Networks (RNNs), Gated Recurrent Units (GRUs), and Long Short-Term Memory networks (LSTMs). Using encoder-decoder sequence-to-sequence (Seq2Seq) models, the project explores both the conventional approach and enhanced versions incorporating attention mechanisms to improve accuracy. By comparing these different models, the project seeks to identify the most effective method for transliterating text between various languages from the [Aksharantar dataset](https://drive.google.com/file/d/1tGIO4-IPNtxJ6RQMmykvAfY_B0AaLY5A/view?usp=drive_link) released by [AI4Bharat](https://ai4bharat.org/). Hyperparameter tuning is done using wandb to find the best performing configurations.
