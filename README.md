@@ -13,7 +13,14 @@ This project aims to build a transliteration system that converts text from one 
 4. [attention_predictions.csv](predictions_attention/attention_predictions.csv) - Predictions of the test set with Attention
 
 ## Usage
-The following steps will allow you to run this project and see the outputs.
+You can run and train the model by two ways. <br>
+- Using main.ipynb file.
+- Using train.py
+
+**Download the *[main.ipynb](link)* file and run it on Google Colab or Kaggle using the provided *[Aksharantar dataset](aksharantar_sampled)*.** <br>
+Note that the source file paths in the ipynb file is corresponding to Kaggle as the code has been trained and run in Kaggle environment. 
+
+Alternatively, <br>
 1. Clone the repository to your local machine:  
 ```
 git clone https://github.com/abhinavtk1/CS6910-A3.git
@@ -26,9 +33,7 @@ cd CS6910-A3
 ```
 python train.py
 ```
-Alternatively, <br>
-**Download the *[main.ipynb](link)* file and run it on Google Colab or Kaggle using the provided *[Aksharantar dataset](aksharantar_sampled)*.** <br>
-Note that the source file paths in the ipynb file is corresponding to Kaggle as the code has been trained and run in Kaggle environment.  
+ 
 
 ## Dependencies
 - python
@@ -79,6 +84,6 @@ sweep_config = {
      }
 }
 ```
-
+**Note: To run the wandb sweeps you have to provide your unique wandb API key.**
 
 ## Code References
