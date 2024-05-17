@@ -39,5 +39,46 @@ Note that the source file paths in the ipynb file is corresponding to Kaggle as 
 - pandas
 
 ## Project Roadmap
-Q1. 
-Q2. 
+Q1. <br>
+Q2. <br>
+Sweep configuration:
+```
+# sweep config file
+sweep_config = {
+    'method': 'bayes',
+    'name' : 'sweep - no attention',
+    'metric': {
+      'goal': 'maximize',
+      'name': 'validation_accuracy'
+    },
+    'parameters':{
+        'input_embedding_size': {
+            'values': [16,32,64, 128]
+        },
+        'enc_layers': {
+            'values': [1,2,3]
+        },
+        'dec_layers': {
+            'values': [1,2,3]
+        },
+        'hidden_size': {
+            'values': [16, 32, 64, 128, 256]
+        },
+        'cell_type': {
+            'values': ['lstm','rnn','gru']
+        },
+        'bidirectional' : {
+            'values' : [True]
+        },
+        'dropout': {
+            'values': [0.1, 0.2, 0.3]
+        },
+        'beam_size' : {
+            'values' : [1,3,5]
+        }
+     }
+}
+```
+
+
+## Code References
