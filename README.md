@@ -26,10 +26,8 @@ cd CS6910-A3
 ```
 python train.py
 ```
-Alternatively, 
-```
-Download the [main.ipynb](link) file and run it on Google Colab or Kaggle using the provided [Aksharantar dataset](aksharantar_sampled).
-```
+Alternatively, <br>
+** Download the *[main.ipynb](link)* file and run it on Google Colab or Kaggle using the provided *[Aksharantar dataset](aksharantar_sampled)*.** <br>
 Note that the source file paths in the ipynb file is corresponding to Kaggle as the code has been trained and run in Kaggle environment.  
 
 ## Dependencies
