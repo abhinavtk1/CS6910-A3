@@ -26,11 +26,20 @@ cd CS6910-A3
 ```
 python train.py
 ```
-Alternatively, you can download the [main.ipynb](link) file and run it on Google Colab or Kaggle using the provided [Aksharantar dataset](aksharantar_sampled). Note that the source file paths in the ipynb file is corresponding to Kaggle as the code has been trained and run in Kaggle environment.  
+Alternatively, 
+```
+Download the [main.ipynb](link) file and run it on Google Colab or Kaggle using the provided [Aksharantar dataset](aksharantar_sampled).
+```
+Note that the source file paths in the ipynb file is corresponding to Kaggle as the code has been trained and run in Kaggle environment.  
 
 ## Dependencies
-python
-numpy library
-wandb library
-torch library
-matplotlib
+- python
+- numpy
+- wandb 
+- torch
+- matplotlib
+- pandas
+
+## Project Roadmap
+Q1. 
+Q2. 
